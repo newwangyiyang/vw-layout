@@ -6,6 +6,9 @@ import router from './router'
 //样式初始化
 import '../static/css/reset.css';
 //引入axios请求
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
+Vue.use(MintUI)
 import axios from './axios/http';
 Vue.prototype.$http = axios;
 Vue.config.productionTip = false

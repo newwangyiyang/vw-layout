@@ -10,9 +10,16 @@ border:medium none;
 margin: 0;
 padding: 0;
 }
+html, body {
+    height: 100vh;
+}
 /** 设置默认字体 **/
 body,button, input, select, textarea {
-font: 12px/1.5 '宋体',tahoma, Srial, helvetica, sans-serif;
+font: 28px/1.5 '微软雅黑' '宋体',tahoma, Srial, helvetica, sans-serif;
+border: none;
+outline: none;
+resize: none;
+-webkit-appearance: none;
 }
 h1, h2, h3, h4, h5, h6 { font-size: 100%; }
 em{font-style:normal;}
@@ -20,8 +27,9 @@ em{font-style:normal;}
 ul, ol { list-style: none; }
 /** 重置超链接元素 **/
 a { text-decoration: none; color:#333;}
-a:hover { text-decoration: underline; color:#F40; }
+a:hover { text-decoration: none; color:#F40; }
 /** 重置图片元素 **/
 img{ border:0px;}
 /** 重置表格元素 **/
 table { border-collapse: collapse; border-spacing: 0; }
+textarea {box-sizing: border-box}
